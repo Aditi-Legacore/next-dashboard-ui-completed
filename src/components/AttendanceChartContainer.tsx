@@ -9,7 +9,7 @@ const AttendanceChartContainer = async () => {
     const dayOfWeek = today.getDay();
     console.log("dayOfWeek", dayOfWeek);
 
-    const daysSinceMonday = dayOfWeek === 0 ? 6 : dayOfWeek;
+    const daysSinceMonday = dayOfWeek === 0 ? 6 : dayOfWeek - 1;
     console.log("daysSinceMonday", daysSinceMonday);
 
     const lastMonday = new Date(today);
