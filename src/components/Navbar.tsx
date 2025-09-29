@@ -27,9 +27,9 @@ const Navbar = async () => {
           </div>
         </div>
         <div className="flex flex-col">
-          <span className="text-xs leading-3 font-medium">{user?.fullName as string}</span>
+          <span className="text-xs leading-3 font-medium">{user?.fullName as string || "User"}</span>
           <span className="text-[10px] text-gray-500 text-right">
-            {user?.publicMetadata?.role as string}
+            {user?.publicMetadata?.role as string || "user"}
           </span>
         </div>
         {/* <Image src="/avatar.png" alt="" width={36} height={36} className="rounded-full"/> */}
